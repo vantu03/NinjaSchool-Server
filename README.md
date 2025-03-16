@@ -1,1 +1,1 @@
-"# NinjaSchool-Server" 
+# NinjaSchool-Server
