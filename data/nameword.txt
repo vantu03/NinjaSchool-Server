@@ -1,0 +1,12 @@
+mod
+moderator
+gamemaster
+admin
+administrator
+hethong
+system
+quantri
+quantrivien
+kiemduyet
+ninja
+hochiminh

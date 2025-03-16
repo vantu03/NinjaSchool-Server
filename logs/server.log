@@ -1,0 +1,48 @@
+[INFO][2025-03-16 12:07:11][main][com.tgame.ninja.server.GameServer.runServer(GameServer.java:198)] Server starting...
+[INFO][2025-03-16 12:07:12][main][com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:80)] root_ninja - Starting...
+[INFO][2025-03-16 12:07:12][main][com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:82)] root_ninja - Start completed.
+[INFO][2025-03-16 12:07:12][main][com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:80)] root_tgame - Starting...
+[ERROR][2025-03-16 12:07:13][main][com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:594)] root_tgame - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'tgame'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.24.jar:8.0.24]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.24.jar:8.0.24]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.24.jar:8.0.24]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.24.jar:8.0.24]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.24.jar:8.0.24]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.24.jar:8.0.24]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) [HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) [HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81) [HikariCP-4.0.3.jar:?]
+	at com.tgame.ninja.data.ConnectionPool.<init>(ConnectionPool.java:49) [classes/:?]
+	at com.tgame.ninja.data.Database.createPoolWeb(Database.java:40) [classes/:?]
+	at com.tgame.ninja.server.GameServer.loadConfig(GameServer.java:248) [classes/:?]
+	at com.tgame.ninja.server.GameServer.runServer(GameServer.java:201) [classes/:?]
+	at com.tgame.ninja.server.GameServer.main(GameServer.java:191) [classes/:?]
+[ERROR][2025-03-16 12:07:13][main][com.tgame.ninja.server.GameServer.loadConfig(GameServer.java:263)] 
+com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Unknown database 'tgame'
+	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:596) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:582) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81) ~[HikariCP-4.0.3.jar:?]
+	at com.tgame.ninja.data.ConnectionPool.<init>(ConnectionPool.java:49) ~[classes/:?]
+	at com.tgame.ninja.data.Database.createPoolWeb(Database.java:40) ~[classes/:?]
+	at com.tgame.ninja.server.GameServer.loadConfig(GameServer.java:248) [classes/:?]
+	at com.tgame.ninja.server.GameServer.runServer(GameServer.java:201) [classes/:?]
+	at com.tgame.ninja.server.GameServer.main(GameServer.java:191) [classes/:?]
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'tgame'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.24.jar:8.0.24]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.24.jar:8.0.24]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833) ~[mysql-connector-java-8.0.24.jar:8.0.24]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453) ~[mysql-connector-java-8.0.24.jar:8.0.24]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.24.jar:8.0.24]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.24.jar:8.0.24]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:?]
+	... 7 more
