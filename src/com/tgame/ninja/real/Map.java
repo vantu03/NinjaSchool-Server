@@ -47,7 +47,7 @@ public class Map {
 
     public static boolean isThulinh;
 
-    public static int[] maxZones = { 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 40, 30, 30, 30, 30, 30, 30, 40, 30, 30, 30, 30, 60, 30, 30, 30, 30, 50, 30, 30, 30, 30, 40, 30, 30, 30, 30, 30, 40, 30, 30, 30, 30, 40, 30, 30, 30, 30, 40, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 0, 0, 0, 30, 0, 30, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 100, 100, 100, 100, 100, 100, 100, 15, 30, 30, 30, 30, 30, 15, 100, 100, 100, 100, 100, 20, 100, 100, 100, 100, 100, 100, 50, 15, 15, 1, 1, 1, 1, 1, 50, 50, 50, 50, 10, 1, 1, 1, 1, 5, 5, 5, 5, 10, 30, 30, 30, 30, 30, 30, 30, 30, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 100, 100, 100, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+    public static int[] maxZones = {30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 40, 30, 30, 30, 30, 30, 30, 40, 30, 30, 30, 30, 60, 30, 30, 30, 30, 50, 30, 30, 30, 30, 40, 30, 30, 30, 30, 30, 40, 30, 30, 30, 30, 40, 30, 30, 30, 30, 40, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 0, 0, 0, 30, 0, 30, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 100, 100, 100, 100, 100, 100, 100, 15, 30, 30, 30, 30, 30, 15, 100, 100, 100, 100, 100, 20, 100, 100, 100, 100, 100, 100, 50, 15, 15, 1, 1, 1, 1, 1, 50, 50, 50, 50, 10, 1, 1, 1, 1, 5, 5, 5, 5, 10, 30, 30, 30, 30, 30, 30, 30, 30, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 100, 100, 100, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
 
     public static Vector<Map> mapkeos = new Vector<>();
 
@@ -55,9 +55,9 @@ public class Map {
 
     public static int saveId = 0;
 
-    public static int[] mapNotSave = { -1, 0, 56, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 98, 99, 100, 101, 102, 103, 104, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 149 };
+    public static int[] mapNotSave = {-1, 0, 56, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 98, 99, 100, 101, 102, 103, 104, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 149};
 
-    public static int[] mapNotCreate = { 0, 56, 73, 74, 78, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 105, 106, 107, 108, 109, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 150, 151, 152, 153, 154, 155, 156 };
+    public static int[] mapNotCreate = {0, 56, 73, 74, 78, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 105, 106, 107, 108, 109, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 150, 151, 152, 153, 154, 155, 156};
 
     public static BossTaThu[] tathus = new BossTaThu[]{
         new BossTaThu(12, 30, 5),
@@ -85,7 +85,7 @@ public class Map {
         new BossTaThu(58, 133, 47)
     };
 
-    public static byte[] npcMapIds = { 22, 0, 0, 21, 0, 23, 26, 0, 71, 0, 3, 60, 39, 5, 5, 40, 30, 7, 30, 31, 9, 8, 9, 63, 47, 11, 50, 11, 49, 49, 12, 34, 51, 35, 66, 52, 66, 13, 52, 64, 64, 14, 14, 15, 15, 67, 67, 16, 68, 68, 16, 41, 41, 42, 42, 42, 62, 62, 44, 44, 18, 18, 24, 59, 59, 24, 45, 45, 53, 53, 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 54, 58, 36, 58, 37, 36, 55, 37, 0, 0, 0 };
+    public static byte[] npcMapIds = {22, 0, 0, 21, 0, 23, 26, 0, 71, 0, 3, 60, 39, 5, 5, 40, 30, 7, 30, 31, 9, 8, 9, 63, 47, 11, 50, 11, 49, 49, 12, 34, 51, 35, 66, 52, 66, 13, 52, 64, 64, 14, 14, 15, 15, 67, 67, 16, 68, 68, 16, 41, 41, 42, 42, 42, 62, 62, 44, 44, 18, 18, 24, 59, 59, 24, 45, 45, 53, 53, 53, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 54, 58, 36, 58, 37, 36, 55, 37, 0, 0, 0};
 
     public static int[] bossTrumMapIds = new int[8];
 
@@ -496,6 +496,10 @@ public class Map {
             try {
                 String[] lines = allNpc.split("\n");
                 for (String line : lines) {
+                    line = line.trim();
+                    if (line.isEmpty()) {
+                        continue; // Bỏ qua dòng trống
+                    }
                     String[] npcInfo = line.split(",");
                     int npcTemplateId = Integer.parseInt(npcInfo[0]);
                     int tileId = Integer.parseInt(npcInfo[1]);
@@ -576,11 +580,15 @@ public class Map {
     }
 
     public void loadNpcPlayer() {
-        String allNpc = NJUtil.readFileString("data/npcplayer/" + getTemplateId() + ".txt");
+        String allNpc = NJUtil.readFileString("data/npcPlayer/" + getTemplateId() + ".txt");
         if (allNpc != null && !allNpc.isEmpty()) {
             try {
                 String[] lines = allNpc.split("\n");
                 for (String line : lines) {
+                    line = line.trim();
+                    if (line.isEmpty()) {
+                        continue; // Bỏ qua dòng trống
+                    }
                     String[] npcInfo = line.split(",");
                     int playerTemplateId = Integer.parseInt(npcInfo[0]);
                     int tileId = Integer.parseInt(npcInfo[1]);
@@ -1059,7 +1067,7 @@ public class Map {
                             if (itt > 7) {
                                 itt = 7;
                             }
-                            int[] ts = { 0, 100, 200, 400, 800, 1600, 3200, 6400 };
+                            int[] ts = {0, 100, 200, 400, 800, 1600, 3200, 6400};
                             int dd = ts[itt];
                             if (dd >= player.getHp() - 1) {
                                 dd = player.getHp() - 1;
@@ -1737,13 +1745,12 @@ public class Map {
                 message.writeLong(item.expires);
                 if (item.isTypeUIMe()) {
                     message.writeInt(item.saleCoinLock);
-                } else if (item.isTypeUIShop() ||
-                    item.isTypeUIShopLock() ||
-                    item.isTypeUIStore() ||
-                    item.isTypeUIBook() ||
-                    item.isTypeUIFashion() ||
-                    item.isTypeUIClanShop()
-                ) {
+                } else if (item.isTypeUIShop()
+                        || item.isTypeUIShopLock()
+                        || item.isTypeUIStore()
+                        || item.isTypeUIBook()
+                        || item.isTypeUIFashion()
+                        || item.isTypeUIClanShop()) {
                     message.writeInt(item.buyCoin);
                     message.writeInt(item.buyCoinLock);
                     message.writeInt(item.buyGold);
@@ -1809,8 +1816,8 @@ public class Map {
             for (int i = 0; i < players.size(); i++) {
                 try {
                     players.get(i)
-                        .getSession()
-                        .sendMessage(message);
+                            .getSession()
+                            .sendMessage(message);
                 } catch (Exception e) {
                 }
             }
@@ -2032,26 +2039,23 @@ public class Map {
             addPlayer(player);
             player.sendAddPlayer();
             player.isChangeMap = false;
-            if (player.isMainchar &&
-                template.mapTemplateId == 2 &&
-                player.taskMain != null &&
-                player.taskMain.template.taskId == 6 &&
-                player.taskMain.index == 1
-            ) {
+            if (player.isMainchar
+                    && template.mapTemplateId == 2
+                    && player.taskMain != null
+                    && player.taskMain.template.taskId == 6
+                    && player.taskMain.index == 1) {
                 player.doTaskNext();
-            } else if (player.isMainchar &&
-                template.mapTemplateId == 71 &&
-                player.taskMain != null &&
-                player.taskMain.template.taskId == 6 &&
-                player.taskMain.index == 2
-            ) {
+            } else if (player.isMainchar
+                    && template.mapTemplateId == 71
+                    && player.taskMain != null
+                    && player.taskMain.template.taskId == 6
+                    && player.taskMain.index == 2) {
                 player.doTaskNext();
-            } else if (player.isMainchar &&
-                template.mapTemplateId == 26 &&
-                player.taskMain != null &&
-                player.taskMain.template.taskId == 6 &&
-                player.taskMain.index == 3
-            ) {
+            } else if (player.isMainchar
+                    && template.mapTemplateId == 26
+                    && player.taskMain != null
+                    && player.taskMain.template.taskId == 6
+                    && player.taskMain.index == 3) {
                 player.doTaskNext();
             } else if (template.mapTemplateId == 33 && player.playerId < 0 && player.headId == 96) {
                 Player p = ServerController.hpPlayers.get(-player.playerId);
@@ -2543,16 +2547,15 @@ public class Map {
                 NJUtil.sendDialog(player.getSession(), AlertFunction.OPEN_DOOR_CT2(player.getSession()));
                 return false;
             }
-            if (GameServer.openChienTruongTest &&
-                (hour == 13 && minute < 30) ||
-                (hour == 14 && minute >= 30) ||
-                (hour == 16 && minute < 30) ||
-                (hour == 17 && minute >= 30) ||
-                (hour == 19 && minute < 30) ||
-                (hour == 20 && minute >= 30)
-            ) {
+            if (GameServer.openChienTruongTest
+                    && (hour == 13 && minute < 30)
+                    || (hour == 14 && minute >= 30)
+                    || (hour == 16 && minute < 30)
+                    || (hour == 17 && minute >= 30)
+                    || (hour == 19 && minute < 30)
+                    || (hour == 20 && minute >= 30)) {
                 if (hour < 15 && player.level > 50 || hour >= 16 && hour < 18 && (player.level <= 50 || player.level > 70)) {
-                    int[] ids = { 1, 27, 72 };
+                    int[] ids = {1, 27, 72};
                     if (player.doChangeMap(ids[NJUtil.randomNumber(ids.length)], false, "map isGO")) {
                         playerLefts.remove(player);
                         playerRights.remove(player);
@@ -2571,11 +2574,10 @@ public class Map {
                 NJUtil.sendDialog(player.getSession(), AlertFunction.VUOT_AI_ALERT4(player.getSession()));
                 return false;
             }
-            if ((hour == 9 && minute < 30) ||
-                (hour == 10 && minute >= 30) ||
-                (hour == 21 && minute < 30) ||
-                (hour == 22 && minute >= 30)
-            ) {
+            if ((hour == 9 && minute < 30)
+                    || (hour == 10 && minute >= 30)
+                    || (hour == 21 && minute < 30)
+                    || (hour == 22 && minute >= 30)) {
                 if ((hour == 10 && minute == 30) || (hour == 22 && minute == 30)) {
                     NJUtil.sendServer(player.getSession(), AlertFunction.VUOT_AI_ALERT5(player.getSession()));
                 } else {
@@ -2888,12 +2890,12 @@ public class Map {
         str.append("\n").append(NJUtil.replace(Alert_VN.HAC_GIA, String.valueOf(countHac)));
         for (int j = 0; j < Math.min(ps.size(), 10); ++j) {
             str.append("\n").append(j + 1).append(" . ")
-                .append(ps.get(j).name).append(": ")
-                .append(ps.get(j).pointCT).append(" ")
-                .append(Alert_VN.POINT).append(" (")
-                .append((ps.get(j).getTypePk() == Player.PK_PHE1) ? Alert_VN.BACH : Alert_VN.HAC).append(")")
-                .append("\n").append(Alert_VN.TITLE_NAME).append(": ")
-                .append(Alert_VN.TITLE_CT[ps.get(j).getCT()]);
+                    .append(ps.get(j).name).append(": ")
+                    .append(ps.get(j).pointCT).append(" ")
+                    .append(Alert_VN.POINT).append(" (")
+                    .append((ps.get(j).getTypePk() == Player.PK_PHE1) ? Alert_VN.BACH : Alert_VN.HAC).append(")")
+                    .append("\n").append(Alert_VN.TITLE_NAME).append(": ")
+                    .append(Alert_VN.TITLE_CT[ps.get(j).getCT()]);
         }
         return str.toString();
     }
@@ -2928,14 +2930,14 @@ public class Map {
                 winCT[i] = ps.get(i).name;
             }
             tongket.append("\n")
-                .append(i + 1).append(" . ")
-                .append(ps.get(i).name).append(": ")
-                .append(ps.get(i).pointCT).append(" ")
-                .append(Alert_VN.POINT).append(" (")
-                .append((ps.get(i).getTypePk() == Player.PK_PHE1) ? Alert_VN.BACH : Alert_VN.HAC).append(")");
+                    .append(i + 1).append(" . ")
+                    .append(ps.get(i).name).append(": ")
+                    .append(ps.get(i).pointCT).append(" ")
+                    .append(Alert_VN.POINT).append(" (")
+                    .append((ps.get(i).getTypePk() == Player.PK_PHE1) ? Alert_VN.BACH : Alert_VN.HAC).append(")");
             tongket.append("\n")
-                .append(Alert_VN.TITLE_NAME).append(": ")
-                .append(Alert_VN.TITLE_CT[ps.get(i).getCT()]);
+                    .append(Alert_VN.TITLE_NAME).append(": ")
+                    .append(Alert_VN.TITLE_CT[ps.get(i).getCT()]);
         }
         strTongket = tongket.toString();
         if (countBach > countHac) {
@@ -2958,19 +2960,19 @@ public class Map {
 
     public static void thaBossTrum() {
         Vector<Integer> mapIds4x = new Vector<>();
-        for (int id : new int[]{ 14, 15, 16, 34, 35, 52 }) {
+        for (int id : new int[]{14, 15, 16, 34, 35, 52}) {
             mapIds4x.add(id);
         }
         Vector<Integer> mapIds5x = new Vector<>();
-        for (int id : new int[]{ 44, 67, 68 }) {
+        for (int id : new int[]{44, 67, 68}) {
             mapIds5x.add(id);
         }
         Vector<Integer> mapIds6x = new Vector<>();
-        for (int id : new int[]{ 24, 41, 45, 59 }) {
+        for (int id : new int[]{24, 41, 45, 59}) {
             mapIds6x.add(id);
         }
         Vector<Integer> mapIds7x = new Vector<>();
-        for (int id : new int[]{ 19, 36, 54 }) {
+        for (int id : new int[]{19, 36, 54}) {
             mapIds7x.add(id);
         }
         Vector<Integer> mapIds8x = new Vector<>();
@@ -2978,15 +2980,15 @@ public class Map {
             mapIds8x.add(id);
         }*/
         Vector<Integer> mapIds9x = new Vector<>();
-        for (int id : new int[]{ 141 }) {
+        for (int id : new int[]{141}) {
             mapIds9x.add(id);
         }
         Vector<Integer> mapIds9x2 = new Vector<>();
-        for (int id : new int[]{ 142 }) {
+        for (int id : new int[]{142}) {
             mapIds9x2.add(id);
         }
         Vector<Integer> mapIds9x3 = new Vector<>();
-        for (int id : new int[]{ 143 }) {
+        for (int id : new int[]{143}) {
             mapIds9x3.add(id);
         }
         Vector<Vector<Integer>> bs = new Vector<>();
@@ -3016,12 +3018,12 @@ public class Map {
                     bossTrumZoneIds[i] = 15 + NJUtil.randomNumber(15);
                 }
                 debugInfo.append("[").append(bossTrumMapIds[i]).append("] ")
-                    .append(ServerController.mapTemplates.get(bossTrumMapIds[i]).name)
-                    .append(" khu vực ").append(bossTrumZoneIds[i])
-                    .append(", ");
+                        .append(ServerController.mapTemplates.get(bossTrumMapIds[i]).name)
+                        .append(" khu vực ").append(bossTrumZoneIds[i])
+                        .append(", ");
             }
         }
-        String[] a = { "Thần thú đã xuất hiện tại ", "Watch out!  Reports warn Legendary Monsters are roaming the " };
+        String[] a = {"Thần thú đã xuất hiện tại ", "Watch out!  Reports warn Legendary Monsters are roaming the "};
         Matcher matcher = Pattern.compile("\\p{InCombiningDiacriticalMarks}+").matcher(Normalizer.normalize(debugInfo, Normalizer.Form.NFD));
         LOGGER.info(a[GameServer.getLang()] + matcher.replaceAll("").replace("đ", "d"));
         NJUtil.sendServerAlert(a[GameServer.getLang()] + mapId);
