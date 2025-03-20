@@ -938,10 +938,10 @@ public class ServerController implements ISessionHandler {
             int userId;
             byte typeAdmin = 0;
             if (username.equals("-1")) {
-//                if (!GameServer.quickPlay) {
-//                    NJUtil.sendDialog(conn, "Chức năng chơi mới đang tạm đóng.");
-//                    return;
-//                }
+                if (!GameServer.quickPlay) {
+                    NJUtil.sendDialog(conn, "Chức năng chơi mới đang tạm đóng.");
+                    return;
+                }
                 try {
                     JsonObject jsonObject = new Gson().fromJson(UserServer.createTemp(), JsonObject.class);
                     if (jsonObject.get("error").getAsBoolean()) {
