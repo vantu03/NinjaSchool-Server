@@ -1861,9 +1861,10 @@ public class ServerController implements ISessionHandler {
                     } else if (conn.clientType == GameServer.CLIENT_WINPHONE) {
                         versionMax = versionMax_winphone;
                     }
-                    if (conn.version < versionMax) {
-                        NJUtil.sendAlertOpenWeb(conn, AlertFunction.UPDATE(conn), AlertFunction.NO(conn), AlertFunction.URL_DOWNLOAD(conn), NJUtil.replace(AlertFunction.VERSION_NEW(conn), NJUtil.formatVersion(versionMax)));
-                    }
+                    // tắt hiển thị tb cập nhập bản mới
+//                    if (conn.version < versionMax) {
+//                        NJUtil.sendAlertOpenWeb(conn, AlertFunction.UPDATE(conn), AlertFunction.NO(conn), AlertFunction.URL_DOWNLOAD(conn), NJUtil.replace(AlertFunction.VERSION_NEW(conn), NJUtil.formatVersion(versionMax)));
+//                    }
                     break;
                 }
                 case Cmd.INPUT_CARD:
