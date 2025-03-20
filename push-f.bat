@@ -1,7 +1,7 @@
 @echo off
 git add .
 git commit -m "update"
-git push -f origin development
+git push origin development --force
 echo ============================
 echo  Done!
 echo ============================
