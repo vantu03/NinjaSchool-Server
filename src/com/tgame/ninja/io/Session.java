@@ -245,6 +245,10 @@ public class Session extends Thread {
         return connected;
     }
 
+    public boolean isVersionAbove(int Version) {
+        return this.version >= Version;
+    }
+
     public boolean isVersion108() {
         return version >= 108;
     }

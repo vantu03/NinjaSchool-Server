@@ -11167,13 +11167,35 @@ public class Player extends LiveObject {
             message.writeByte(playerMap.countPB);
             message.writeByte(playerMap.limitTiemnangso);
             message.writeByte(playerMap.limitKynangso);
-            for (int i = 0; i < playerMap.itemBodys.length; ++i) {
-                if (playerMap.itemBodys[i] != null) {
-                    message.writeShort(playerMap.itemBodys[i].template.itemTemplateId);
-                    message.writeByte(playerMap.itemBodys[i].upgrade);
-                    message.writeByte(playerMap.itemBodys[i].sys);
+            if(!conn.isVersionAbove(180)){
+                for (int i = 0; i < playerMap.itemBodys.length; ++i) {
+                    if (playerMap.itemBodys[i] != null) {
+                        message.writeShort(playerMap.itemBodys[i].template.itemTemplateId);
+                        message.writeByte(playerMap.itemBodys[i].upgrade);
+                        message.writeByte(playerMap.itemBodys[i].sys);
+                    }
+                }
+            }else {
+                for (int i = 0; i < 16; ++i) {
+                    if (playerMap.itemBodys[i] != null) {
+                        message.writeShort(playerMap.itemBodys[i].template.itemTemplateId);
+                        message.writeByte(playerMap.itemBodys[i].upgrade);
+                        message.writeByte(playerMap.itemBodys[i].sys);
+                    } else {
+                        message.writeShort(-1);
+                    }
+                }
+                for (int i = 0; i < 16; ++i) {
+                    if (playerMap.itemBodys[i] != null) {
+                        message.writeShort(playerMap.itemBodys[i].template.itemTemplateId);
+                        message.writeByte(playerMap.itemBodys[i].upgrade);
+                        message.writeByte(playerMap.itemBodys[i].sys);
+                    } else {
+                        message.writeShort(-1);
+                    }
                 }
             }
+           
             NJUtil.sendMessage(getSession(), message);
             message = new Message(Cmd.VIEW_INFO1);
             message.writeInt(pointTT);

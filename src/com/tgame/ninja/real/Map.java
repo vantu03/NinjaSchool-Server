@@ -1508,7 +1508,12 @@ public class Map {
             message.writeBoolean(npcs.timeFire > 0);
             message.writeBoolean(npcs.timeIce > 0);
             message.writeBoolean(npcs.timeWind > 0);
-            message.writeByte(npcs.template.npcTemplateId);
+            if (player.getSession().isVersionAbove(211)) {
+                message.writeShort(npcs.template.npcTemplateId);
+            } else {
+                message.writeByte(npcs.template.npcTemplateId);
+            }
+
             message.writeByte(npcs.sys);
             if ((npcs.isTinhAnh() || npcs.levelBoss == 2) && !npcs.isHit(player)) {
                 message.writeInt(npcs.template.hp);

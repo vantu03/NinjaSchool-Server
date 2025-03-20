@@ -24,7 +24,7 @@ public class ServerController implements ISessionHandler {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ServerController.class);
 
-   public static int versionMin_java = 148;
+    public static int versionMin_java = 148;
     public static int versionMax_java = 220;
 
     public static int versionMin_android = 148;
@@ -44,7 +44,6 @@ public class ServerController implements ISessionHandler {
 
     public static int versionMin_winphone = 148;
     public static int versionMax_winphone = 220;
-
 
     public static boolean isExit = false;
 
@@ -207,95 +206,95 @@ public class ServerController implements ISessionHandler {
     public static byte[][] imageDynamicEffOnPlayer4 = null;
 
     public static byte[][] tasks = {
-        { 12, 3, 4, 6, 24, 5, 7, 12 },
-        { 12, 4, 4, 4, 4, 4, 12 },
-        { 12, -2, -2, 12 },
-        { 12, 4, -2, -2, -2, 12 },
-        { 12, -2, -2, -2, 12 },
-        { 3, -2, -2, 3 },
-        { 7, -2, -2, -2, -2, 7 },
-        { 12, -2, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 12 },
-        { 12, -2, 9, 10, 11, 12 },
-        { -1, -2, -2, -2, -1 },
-        { -1, -2, -2, -2, -1 },
-        { -1, -2, -2, -1 },
-        { -1, -2, -2, -2, -2, -1 },
-        { 0, -2, 10, 11, 9, 0 },
-        { 2, -2, -2, -2, 2 },
-        { 1, -2, 14, 15, 16, 1 },
-        { 16, -2, -2, -2, 16 },
-        { 18, -2, 17, 18 },
-        { 18, -2, -2, -2, 18 },
-        { 18, -2, -2, 18 },
-        { 18, -2, 15, 18 },
-        { 23, -2, -2, -2, 23 },
-        { 23, -2, -2, 23 },
-        { 23, -2, -2, 23 },
-        { 23, -2, -2, 23 },
-        { 19, -2, -2, -2, 19 },
-        { 19, -2, -2, 19 },
-        { 19, -2, -2, 19 },
-        { 20, -2, -2, -2, 20 },
-        { 20, -2, -2, 20 },
-        { 20, -2, -2, -2, 20 },
-        { 20, -2, -2, -2, 20 },
-        { 20, -2, -2, 20 },
-        { 22, -2, -2, -2, 22 },
-        { 22, -2, -2, 22 },
-        { 22, -2, -2, 22 },
-        { 22, -2, -2, 22 },
-        { 22, -2, -2, -2, 22 },
-        { 22, -2, -2, -2, 22 },
-        { 22, -2, -2, -2, -2, 22 },
-        { 22, -2, -2, -2, -2, 22 },
-        { 22, -2, -2, -2, 22 },
-        { 22, -2, -2, 22 }
+        {12, 3, 4, 6, 24, 5, 7, 12},
+        {12, 4, 4, 4, 4, 4, 12},
+        {12, -2, -2, 12},
+        {12, 4, -2, -2, -2, 12},
+        {12, -2, -2, -2, 12},
+        {3, -2, -2, 3},
+        {7, -2, -2, -2, -2, 7},
+        {12, -2, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 12},
+        {12, -2, 9, 10, 11, 12},
+        {-1, -2, -2, -2, -1},
+        {-1, -2, -2, -2, -1},
+        {-1, -2, -2, -1},
+        {-1, -2, -2, -2, -2, -1},
+        {0, -2, 10, 11, 9, 0},
+        {2, -2, -2, -2, 2},
+        {1, -2, 14, 15, 16, 1},
+        {16, -2, -2, -2, 16},
+        {18, -2, 17, 18},
+        {18, -2, -2, -2, 18},
+        {18, -2, -2, 18},
+        {18, -2, 15, 18},
+        {23, -2, -2, -2, 23},
+        {23, -2, -2, 23},
+        {23, -2, -2, 23},
+        {23, -2, -2, 23},
+        {19, -2, -2, -2, 19},
+        {19, -2, -2, 19},
+        {19, -2, -2, 19},
+        {20, -2, -2, -2, 20},
+        {20, -2, -2, 20},
+        {20, -2, -2, -2, 20},
+        {20, -2, -2, -2, 20},
+        {20, -2, -2, 20},
+        {22, -2, -2, -2, 22},
+        {22, -2, -2, 22},
+        {22, -2, -2, 22},
+        {22, -2, -2, 22},
+        {22, -2, -2, -2, 22},
+        {22, -2, -2, -2, 22},
+        {22, -2, -2, -2, -2, 22},
+        {22, -2, -2, -2, -2, 22},
+        {22, -2, -2, -2, 22},
+        {22, -2, -2, 22}
     };
 
     public static byte[][] mapTasks = {
-        { 22, 22, 22, 22, 22, 22, 22, 22 },
-        { 22, 22, 22, 22, 22, 22, 22 },
-        { 22, -2, 22, 22 },
-        { 22, 22, -2, 23, 23, 22 },
-        { 22, -2, 21, 23, 22 },
-        { 22, -2, 6, 22 },
-        { 22, -2, 2, 71, 26, 22 },
-        { 22, -2, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22 },
-        { 22, -2, 1, 72, 27, 22 },
-        { -1, -2, -2, -2, -1 },
-        { -1, 28, 4, 46, -1 },
-        { -1, -2, -2, -1 },
-        { -1, -2, -2, -2, -2, -1 },
-        { -1, -2, 72, 27, 1, -1 },
-        { -1, -2, 29, 40, -1 },
-        { -1, -2, 31, 8, 65, -1 },
-        { 65, -2, 63, 47, 65 },
-        { 32, -2, 33, 32 },
-        { 32, -2, 50, 11, 32 },
-        { 32, -2, 63, 32 },
-        { 32, -2, 8, 32 },
-        { 48, -2, 12, 34, 48 },
-        { 48, -2, 35, 48 },
-        { 48, -2, 35, 48 },
-        { 48, -2, -2, 48 },
-        { 10, -2, 13, 52, 10 },
-        { 10, -2, 64, 10 },
-        { 10, -2, 14, 10 },
-        { 38, -2, 14, 15, 38 },
-        { 38, -2, 15, 38 },
-        { 38, -2, -2, -2, 38 },
-        { 38, -2, 16, 68, 38 },
-        { 38, -2, 38, 38 },
-        { 17, -2, 41, 41, 17 },
-        { 17, -2, 42, 17 },
-        { 17, -2, 24, 17 },
-        { 17, -2, 62, 17 },
-        { 17, -2, 44, 44, 17 },
-        { 17, -2, 18, 18, 17 },
-        { 17, -2, -2, -2, -2, 17 },
-        { 17, -2, -2, -2, -2, 17 },
-        { 17, -2, -2, -2, 17 },
-        { 17, -2, -2, 17 }
+        {22, 22, 22, 22, 22, 22, 22, 22},
+        {22, 22, 22, 22, 22, 22, 22},
+        {22, -2, 22, 22},
+        {22, 22, -2, 23, 23, 22},
+        {22, -2, 21, 23, 22},
+        {22, -2, 6, 22},
+        {22, -2, 2, 71, 26, 22},
+        {22, -2, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22},
+        {22, -2, 1, 72, 27, 22},
+        {-1, -2, -2, -2, -1},
+        {-1, 28, 4, 46, -1},
+        {-1, -2, -2, -1},
+        {-1, -2, -2, -2, -2, -1},
+        {-1, -2, 72, 27, 1, -1},
+        {-1, -2, 29, 40, -1},
+        {-1, -2, 31, 8, 65, -1},
+        {65, -2, 63, 47, 65},
+        {32, -2, 33, 32},
+        {32, -2, 50, 11, 32},
+        {32, -2, 63, 32},
+        {32, -2, 8, 32},
+        {48, -2, 12, 34, 48},
+        {48, -2, 35, 48},
+        {48, -2, 35, 48},
+        {48, -2, -2, 48},
+        {10, -2, 13, 52, 10},
+        {10, -2, 64, 10},
+        {10, -2, 14, 10},
+        {38, -2, 14, 15, 38},
+        {38, -2, 15, 38},
+        {38, -2, -2, -2, 38},
+        {38, -2, 16, 68, 38},
+        {38, -2, 38, 38},
+        {17, -2, 41, 41, 17},
+        {17, -2, 42, 17},
+        {17, -2, 24, 17},
+        {17, -2, 62, 17},
+        {17, -2, 44, 44, 17},
+        {17, -2, 18, 18, 17},
+        {17, -2, -2, -2, -2, 17},
+        {17, -2, -2, -2, -2, 17},
+        {17, -2, -2, -2, 17},
+        {17, -2, -2, 17}
     };
 
     public static Vector<Hashtable<Integer, Frame>> iconFramesZoom = new Vector<>();
@@ -340,20 +339,20 @@ public class ServerController implements ISessionHandler {
 
     public static String tmpUserPrefix = "tmpusr";
 
-    public static int[] all = new int[]{ 776, 777 };
+    public static int[] all = new int[]{776, 777};
 
     public static int[][][] frameMount = new int[][][]{
         {
-            { 3049, 3050 },
-            { 3051, 3051, 3052, 3052, 3053, 3053 },
-            { 3054 }, { 3055 }, { 3056 },
-            { 3049, 3049, 3049, 3050, 3050, 3050 }
+            {3049, 3050},
+            {3051, 3051, 3052, 3052, 3053, 3053},
+            {3054}, {3055}, {3056},
+            {3049, 3049, 3049, 3050, 3050, 3050}
         },
         {
-            { 3057, 3058 },
-            { 3059, 3059, 3060, 3060, 3061, 3061, 3062, 3062 },
-            { 3063 }, { 3064 }, { 3065 },
-            { 3057, 3057, 3057, 3058, 3058, 3058 }
+            {3057, 3058},
+            {3059, 3059, 3060, 3060, 3061, 3061, 3062, 3062},
+            {3063}, {3064}, {3065},
+            {3057, 3057, 3057, 3058, 3058, 3058}
         }
     };
 
@@ -796,7 +795,7 @@ public class ServerController implements ISessionHandler {
                     }
                     player.saveRmsAll();
                     if (player.myskill != null && player.myskill.template != null) {
-                        player.saveRms("CSkill", new byte[]{ (byte) player.myskill.template.skillTemplateId }, true);
+                        player.saveRms("CSkill", new byte[]{(byte) player.myskill.template.skillTemplateId}, true);
                     }
                 } catch (Exception e2) {
                     LOGGER.error("Error onDisconnect NJCONTROL");
@@ -826,7 +825,7 @@ public class ServerController implements ISessionHandler {
     @Override
     public void doEncrypt(Session conn) {
         try {
-            byte[] key = { 0 };
+            byte[] key = {0};
             NJUtil.random.nextBytes(key);
             Message message = new Message(Cmd.GET_SESSION_ID);
             message.dos.writeByte(key.length);
@@ -1281,25 +1280,25 @@ public class ServerController implements ISessionHandler {
                     player.clan.assist_name = memName;
                     mem.typeClan = 3;
                 } else //noinspection ConstantConditions
-                    if (typeClan == 2) {
-                        if (player.clan.elder1_name.isEmpty()) {
-                            player.clan.elder1_name = memName;
-                            mem.typeClan = 2;
-                        } else if (player.clan.elder2_name.isEmpty()) {
-                            player.clan.elder2_name = memName;
-                            mem.typeClan = 2;
-                        } else if (player.clan.elder3_name.isEmpty()) {
-                            player.clan.elder3_name = memName;
-                            mem.typeClan = 2;
-                        } else if (player.clan.elder4_name.isEmpty()) {
-                            player.clan.elder4_name = memName;
-                            mem.typeClan = 2;
-                        } else //noinspection ConstantConditions
-                            if (player.clan.elder5_name.isEmpty()) {
-                                player.clan.elder5_name = memName;
-                                mem.typeClan = 2;
-                            }
+                if (typeClan == 2) {
+                    if (player.clan.elder1_name.isEmpty()) {
+                        player.clan.elder1_name = memName;
+                        mem.typeClan = 2;
+                    } else if (player.clan.elder2_name.isEmpty()) {
+                        player.clan.elder2_name = memName;
+                        mem.typeClan = 2;
+                    } else if (player.clan.elder3_name.isEmpty()) {
+                        player.clan.elder3_name = memName;
+                        mem.typeClan = 2;
+                    } else if (player.clan.elder4_name.isEmpty()) {
+                        player.clan.elder4_name = memName;
+                        mem.typeClan = 2;
+                    } else //noinspection ConstantConditions
+                    if (player.clan.elder5_name.isEmpty()) {
+                        player.clan.elder5_name = memName;
+                        mem.typeClan = 2;
                     }
+                }
                 Player p2 = hnPlayers.get(memName);
                 if (p2 != null) {
                     Player.sendUpdateClan(p2, mem.typeClan);
@@ -1358,8 +1357,7 @@ public class ServerController implements ISessionHandler {
             player.subXu(xu);
             String[] strs = {
                 mem.name + Alert_VN.MOVE_OUT1 + " " + xu + " " + Alert_VN.COIN,
-                mem.name + Alert_EN.MOVE_OUT1 + " " + xu + " " + Alert_EN.COIN,
-            };
+                mem.name + Alert_EN.MOVE_OUT1 + " " + xu + " " + Alert_EN.COIN,};
             player.clan.sendAlert(strs, null);
             player.clan.members.remove(mem);
             player.timeOutClan = (int) (System.currentTimeMillis() / 1000L) + 86400;
@@ -1433,8 +1431,9 @@ public class ServerController implements ISessionHandler {
             conn.isQwerty = message.readBoolean();
             conn.isTouch = message.readBoolean();
             conn.deviceName = message.readUTF();
+            message.readInt();
             message.readByte(); // Main.versionIp
-            conn.versionIphone = message.readInt();
+            // conn.versionIphone = message.readInt();
             conn.typeLanguage = (byte) (message.readByte() == 1 ? 1 : 0);
             conn.provider = message.readInt();
             conn.agentCode = message.readUTF();
@@ -1542,7 +1541,7 @@ public class ServerController implements ISessionHandler {
             Player player = new Player(conn, name, isGender, headId);
             ++newplayeId;
             player.playerId = newplayeId;
-            if(Database.createPlayer(player)) {
+            if (Database.createPlayer(player)) {
                 sendListPlayers(conn);
             } else {
                 NJUtil.sendDialog(conn, AlertFunction.ERROR(conn));
@@ -2094,7 +2093,6 @@ public class ServerController implements ISessionHandler {
         }
     }
 
-
     private void doRequestMapTemplate(Session conn, Message message) {
         try {
             int mapTemplateId = message.dis.readUnsignedByte();
@@ -2196,10 +2194,10 @@ public class ServerController implements ISessionHandler {
             int npcTemplateId = message.dis.readUnsignedByte();
             NpcTemplate npcTemplate = npcTemplates.get(npcTemplateId);
             message = NJUtil.messageNotMap(Cmd.REQUEST_NPCTEMPLATE);
-            if (!conn.isVersion123()) {
-                message.writeByte(npcTemplate.npcTemplateId);
-            } else {
+            if (conn.isVersionAbove(200)) {
                 message.writeShort(npcTemplate.npcTemplateId);
+            } else {
+                message.writeByte(npcTemplate.npcTemplateId);
             }
             if (conn.isVersion123()) {
                 if (npcTemplate.isPetNew()) {
@@ -2265,7 +2263,7 @@ public class ServerController implements ISessionHandler {
                 return;
             }
             int ct = player.getCT();
-            int[] idDan = { 275, 276, 277, 278 };
+            int[] idDan = {275, 276, 277, 278};
             int goldAdd = 0;
             Vector<Item> itAdd = new Vector<>();
             switch (ct) {
@@ -2915,7 +2913,7 @@ public class ServerController implements ISessionHandler {
                         player.savezaLog("Thoat game");
                     }
                     if (player.myskill != null && player.myskill.template != null) {
-                        player.saveRms("CSkill", new byte[]{ (byte) player.myskill.template.skillTemplateId }, true);
+                        player.saveRms("CSkill", new byte[]{(byte) player.myskill.template.skillTemplateId}, true);
                     }
                 } catch (Exception e) {
                 }
@@ -3108,14 +3106,13 @@ public class ServerController implements ISessionHandler {
     public static Clan getClanPc(Player player) {
         for (int i = 0; i < clans.size(); i++) {
             Clan clan = clans.get(i);
-            if ((clan.main_name != null && clan.main_name.equals(player.name)) ||
-                (clan.assist_name != null && clan.assist_name.equals(player.name)) ||
-                (clan.elder1_name != null && clan.elder1_name.equals(player.name)) ||
-                (clan.elder2_name != null && clan.elder2_name.equals(player.name)) ||
-                (clan.elder3_name != null && clan.elder3_name.equals(player.name)) ||
-                (clan.elder4_name != null && clan.elder4_name.equals(player.name)) ||
-                (clan.elder5_name != null && clan.elder5_name.equals(player.name))
-            ) {
+            if ((clan.main_name != null && clan.main_name.equals(player.name))
+                    || (clan.assist_name != null && clan.assist_name.equals(player.name))
+                    || (clan.elder1_name != null && clan.elder1_name.equals(player.name))
+                    || (clan.elder2_name != null && clan.elder2_name.equals(player.name))
+                    || (clan.elder3_name != null && clan.elder3_name.equals(player.name))
+                    || (clan.elder4_name != null && clan.elder4_name.equals(player.name))
+                    || (clan.elder5_name != null && clan.elder5_name.equals(player.name))) {
                 Member mem;
                 if (clan.main_name != null && clan.main_name.equals(player.name)) {
                     mem = new Member(4);
@@ -3147,36 +3144,32 @@ public class ServerController implements ISessionHandler {
         switch (x) {
             case 1:
                 try (FileInputStream fis = new FileInputStream("data/x1/item/" + id + ".png");
-                     DataInputStream dis = new DataInputStream(fis)
-                ) {
-                    dis.read(ServerController.imageTreex1[id] = new byte[dis.available()], 0, ServerController.imageTreex1[id].length);
-                } catch (Exception e) {
-                }
-                break;
+                        DataInputStream dis = new DataInputStream(fis)) {
+                dis.read(ServerController.imageTreex1[id] = new byte[dis.available()], 0, ServerController.imageTreex1[id].length);
+            } catch (Exception e) {
+            }
+            break;
             case 2:
                 try (FileInputStream fis = new FileInputStream("data/x2/item/" + id + ".png");
-                     DataInputStream dis = new DataInputStream(fis)
-                ) {
-                    dis.read(ServerController.imageTreex2[id] = new byte[dis.available()], 0, ServerController.imageTreex2[id].length);
-                } catch (Exception e) {
-                }
-                break;
+                        DataInputStream dis = new DataInputStream(fis)) {
+                dis.read(ServerController.imageTreex2[id] = new byte[dis.available()], 0, ServerController.imageTreex2[id].length);
+            } catch (Exception e) {
+            }
+            break;
             case 3:
                 try (FileInputStream fis = new FileInputStream("data/x3/item/" + id + ".png");
-                     DataInputStream dis = new DataInputStream(fis)
-                ) {
-                    dis.read(ServerController.imageTreex3[id] = new byte[dis.available()], 0, ServerController.imageTreex3[id].length);
-                } catch (Exception e) {
-                }
-                break;
+                        DataInputStream dis = new DataInputStream(fis)) {
+                dis.read(ServerController.imageTreex3[id] = new byte[dis.available()], 0, ServerController.imageTreex3[id].length);
+            } catch (Exception e) {
+            }
+            break;
             case 4:
                 try (FileInputStream fis = new FileInputStream("data/x4/item/" + id + ".png");
-                     DataInputStream dis = new DataInputStream(fis)
-                ) {
-                    dis.read(ServerController.imageTreex4[id] = new byte[dis.available()], 0, ServerController.imageTreex4[id].length);
-                } catch (Exception e) {
-                }
-                break;
+                        DataInputStream dis = new DataInputStream(fis)) {
+                dis.read(ServerController.imageTreex4[id] = new byte[dis.available()], 0, ServerController.imageTreex4[id].length);
+            } catch (Exception e) {
+            }
+            break;
         }
     }
 
@@ -3419,7 +3412,11 @@ public class ServerController implements ISessionHandler {
                 }
             }
             size = npcTemplates.size();
-            message.writeByte(size);
+            if (conn.isVersionAbove(200)) {
+                message.writeShort(size);
+            } else {
+                message.writeByte(size);
+            }
             for (int i = 0; i < size; ++i) {
                 NpcTemplate npcTemplate = npcTemplates.get(i);
                 message.writeByte(npcTemplate.type);
@@ -3467,10 +3464,9 @@ public class ServerController implements ISessionHandler {
                         message.writeByte(skill.maxFight);
                         message.writeByte(skill.options.size());
                         for (int l = 0; l < skill.options.size(); ++l) {
-                            if (skill.options.get(l).optionTemplate.skillOptionTemplateId == 37 ||
-                                skill.options.get(l).optionTemplate.skillOptionTemplateId == 38 ||
-                                skill.options.get(l).optionTemplate.skillOptionTemplateId == 39
-                            ) {
+                            if (skill.options.get(l).optionTemplate.skillOptionTemplateId == 37
+                                    || skill.options.get(l).optionTemplate.skillOptionTemplateId == 38
+                                    || skill.options.get(l).optionTemplate.skillOptionTemplateId == 39) {
                                 message.writeShort(skill.options.get(l).param / 100);
                             } else {
                                 message.writeShort(skill.options.get(l).param);
