@@ -2,7 +2,7 @@
 - Teamobi original source
 ## Setup
 - Java 23
-- Install xampp and upload tgame.sql
+- Install and upload tgame.sql
 - config database server.properties
 ```java
 database.host=127.0.0.1:3306
@@ -16,3 +16,5 @@ database2.name=tgame
 database2.user=root
 database2.password=
 database2.maxPool=10
+```
+- server open port 14444
