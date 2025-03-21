@@ -2,7 +2,7 @@
 - Teamobi original source
 ## Setup
 - Java 23
-- Install and upload tgame.sql
+- Install xampp and upload tgame.sql
 - config database server.properties
 ```java
 database.host=127.0.0.1:3306
