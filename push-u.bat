@@ -1,4 +1,4 @@
 git add .
-git commit -m "try error fix on new client version"
+git commit -m "update database"
 git branch -M development
 git push -u origin development
